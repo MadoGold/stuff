@@ -21,9 +21,9 @@ const SingleProduct = () => {
 
   useEffect(() => {
     if (!isFetching && !isLoading && !isSuccess) {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       navigate(ROUTES.HOME)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading, isFetching, isSuccess])
 
   useEffect(() => {
